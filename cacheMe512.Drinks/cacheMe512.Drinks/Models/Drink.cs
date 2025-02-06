@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace drinks_info.Models
+namespace cacheMe512.Drinks.Models
 {
     public class Drinks
     {
