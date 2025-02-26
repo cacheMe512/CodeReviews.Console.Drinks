@@ -9,55 +9,91 @@ namespace cacheMe512.Drinks.Models
     }
     internal class DrinkDetail
     {
-        public string strDrink { get; set; }
-        public object strDrinkAlternate { get; set; }
-        public object strTags { get; set; }
-        public object strVideo { get; set; }
-        public string strCategory { get; set; }
-        public object strIBA { get; set; }
-        public string strAlcoholic { get; set; }
-        public string strGlass { get; set; }
-        public string strInstructions { get; set; }
-        public object strInstructionsES { get; set; }
-        public string strInstructionsDE { get; set; }
-        public object strInstructionsFR { get; set; }
-        public string strInstructionsIT { get; set; }
-        public object strInstructionsZHHANS { get; set; }
-        public object strInstructionsZHHANT { get; set; }
-        public string strDrinkThumb { get; set; }
-        public string strIngredient1 { get; set; }
-        public string strIngredient2 { get; set; }
-        public string strIngredient3 { get; set; }
-        public string strIngredient4 { get; set; }
-        public object strIngredient5 { get; set; }
-        public object strIngredient6 { get; set; }
-        public object strIngredient7 { get; set; }
-        public object strIngredient8 { get; set; }
-        public object strIngredient9 { get; set; }
-        public object strIngredient10 { get; set; }
-        public object strIngredient11 { get; set; }
-        public object strIngredient12 { get; set; }
-        public object strIngredient13 { get; set; }
-        public object strIngredient14 { get; set; }
-        public object strIngredient15 { get; set; }
-        public string strMeasure1 { get; set; }
-        public string strMeasure2 { get; set; }
-        public string strMeasure3 { get; set; }
-        public string strMeasure4 { get; set; }
-        public object strMeasure5 { get; set; }
-        public object strMeasure6 { get; set; }
-        public object strMeasure7 { get; set; }
-        public object strMeasure8 { get; set; }
-        public object strMeasure9 { get; set; }
-        public object strMeasure10 { get; set; }
-        public object strMeasure11 { get; set; }
-        public object strMeasure12 { get; set; }
-        public object strMeasure13 { get; set; }
-        public object strMeasure14 { get; set; }
-        public object strMeasure15 { get; set; }
-        public object strImageSource { get; set; }
-        public object strImageAttribution { get; set; }
-        public string strCreativeCommonsConfirmed { get; set; }
-        public string dateModified { get; set; }
+        [JsonProperty("strDrink")]
+        public string DrinkName { get; set; }
+
+        [JsonProperty("strDrinkAlternate")]
+        public object DrinkAlternate { get; set; }
+
+        [JsonProperty("strTags")]
+        public object Tags { get; set; }
+
+        [JsonProperty("strVideo")]
+        public object Video { get; set; }
+
+        [JsonProperty("strCategory")]
+        public string Category { get; set; }
+
+        [JsonProperty("strIBA")]
+        public object Iba { get; set; }
+
+        [JsonProperty("strAlcoholic")]
+        public string Alcoholic { get; set; }
+
+        [JsonProperty("strGlass")]
+        public string Glass { get; set; }
+
+        [JsonProperty("strInstructions")]
+        public string Instructions { get; set; }
+
+        [JsonProperty("strInstructionsES")]
+        public object InstructionsEs { get; set; }
+
+        [JsonProperty("strInstructionsDE")]
+        public string InstructionsDe { get; set; }
+
+        [JsonProperty("strInstructionsFR")]
+        public object InstructionsFr { get; set; }
+
+        [JsonProperty("strInstructionsIT")]
+        public string InstructionsIt { get; set; }
+
+        [JsonProperty("strInstructionsZH-HANS")]
+        public object InstructionsZhhans { get; set; }
+
+        [JsonProperty("strInstructionsZH-HANT")]
+        public object InstructionsZhhant { get; set; }
+
+        [JsonProperty("strDrinkThumb")]
+        public string DrinkThumb { get; set; }
+
+        [JsonProperty("strIngredient1")]
+        public string Ingredient1 { get; set; }
+
+        [JsonProperty("strIngredient2")]
+        public string Ingredient2 { get; set; }
+
+        [JsonProperty("strIngredient3")]
+        public string Ingredient3 { get; set; }
+
+        [JsonProperty("strIngredient4")]
+        public string Ingredient4 { get; set; }
+
+        [JsonProperty("strIngredient5")]
+        public object Ingredient5 { get; set; }
+
+        [JsonProperty("strMeasure1")]
+        public string Measure1 { get; set; }
+
+        [JsonProperty("strMeasure2")]
+        public string Measure2 { get; set; }
+
+        [JsonProperty("strMeasure3")]
+        public string Measure3 { get; set; }
+
+        [JsonProperty("strMeasure4")]
+        public string Measure4 { get; set; }
+
+        [JsonProperty("strImageSource")]
+        public object ImageSource { get; set; }
+
+        [JsonProperty("strImageAttribution")]
+        public object ImageAttribution { get; set; }
+
+        [JsonProperty("strCreativeCommonsConfirmed")]
+        public string CreativeCommonsConfirmed { get; set; }
+
+        [JsonProperty("dateModified")]
+        public string DateModified { get; set; }
     }
 }

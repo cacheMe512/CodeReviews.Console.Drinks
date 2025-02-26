@@ -65,26 +65,20 @@ internal class DrinksService
             List<DrinkDetail> returnedList = serialize.DrinkDetailList;
             DrinkDetail drinkDetail = returnedList[0];
             List<object> prepList = new();
-            string formattedName = "";
 
             foreach (PropertyInfo prop in drinkDetail.GetType().GetProperties())
             {
-                if (prop.Name.Contains("str"))
-                {
-                    formattedName = prop.Name.Substring(3);
-                }
-
                 if (!string.IsNullOrEmpty(prop.GetValue(drinkDetail)?.ToString()))
                 {
                     prepList.Add(new
                     {
-                        Key = formattedName,
+                        Key = prop.Name,
                         Value = prop.GetValue(drinkDetail)
                     });
                 }
             }
 
-            TableVisualizationEngine.ShowTable(prepList, drinkDetail.strDrink);
+            TableVisualizationEngine.ShowTable(prepList, drinkDetail.DrinkName);
         }
     }
 }

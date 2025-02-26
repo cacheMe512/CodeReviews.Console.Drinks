@@ -10,7 +10,11 @@ namespace cacheMe512.Drinks.Models
 
     public class Drink
     {
-        public string idDrink { get; set; }
-        public string strDrink { get; set; }
+        [JsonProperty("idDrink")]
+        public string DrinkId { get; set; }
+
+        [JsonProperty("strDrink")]
+        public string DrinkName { get; set; }
     }
+
 }
